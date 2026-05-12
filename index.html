@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Haven | Find Your Cuddle Buddy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: #d4a373;
+            --secondary: #faedcd;
+            --accent: #ccd5ae;
+            --text: #4a3728;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Fredoka', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #fefae0 0%, #faedcd 100%);
+        }
+        .teddy-card:hover {
+            transform: translateY(-8px);
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 25px -5px rgba(212, 163, 115, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#fffcf2]">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="p-2 bg-orange-100 rounded-xl">
+                        <i data-lucide="heart" class="text-orange-500 fill-orange-500"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-[#4a3728]">TeddyHaven</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="#home" class="hover:text-orange-500 transition-colors">Home</a>
+                    <a href="#collection" class="hover:text-orange-500 transition-colors">Collection</a>
+                    <a href="#about" class="hover:text-orange-500 transition-colors">Our Story</a>
+                    <a href="#reviews" class="hover:text-orange-500 transition-colors">Reviews</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="p-2 hover:bg-orange-50 rounded-full relative">
+                        <i data-lucide="shopping-cart"></i>
+                        <span class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">2</span>
+                    </button>
+                    <button class="md:hidden p-2">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1 text-center lg:text-left">
+                    <span class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold mb-6">Hand-stitched with love ❤️</span>
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Everyone deserves a <span class="text-orange-500">cuddle buddy</span>.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0">
+                        Discover our collection of premium, eco-friendly teddy bears designed to bring warmth and joy to your home.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#collection" class="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl font-bold shadow-lg shadow-orange-200 transition-all text-center">Shop Now</a>
+                        <a href="#" class="px-8 py-4 bg-white text-orange-900 rounded-2xl font-bold border-2 border-orange-100 hover:border-orange-200 transition-all text-center flex items-center justify-center gap-2">
+                            <i data-lucide="play-circle" class="w-5 h-5"></i>
+                            Watch Story
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="relative w-full max-w-lg mx-auto">
+                        <div class="absolute -top-10 -left-10 w-40 h-40 bg-accent rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary rounded-full opacity-10 animate-bounce"></div>
+                        <img src="https://placehold.co/600x600/faedcd/d4a373?text=Super+Soft+Teddy" alt="Giant Brown Teddy Bear" class="relative z-10 rounded-3xl custom-shadow w-full h-auto object-cover border-8 border-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center p-8 rounded-3xl bg-[#fefae0]">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                        <i data-lucide="leaf" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Eco-Friendly Materials</h3>
+                    <p class="text-gray-600">100% organic cotton and recycled stuffing for a greener planet.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-8 rounded-3xl bg-[#faedcd]">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                        <i data-lucide="shield-check" class="text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Safe for Newborns</h3>
+                    <p class="text-gray-600">ASTM certified and safety-tested. No small parts or loose fibers.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-8 rounded-3xl bg-[#ccd5ae]/30">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                        <i data-lucide="truck" class="text-brown-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Express Delivery</h3>
+                    <p class="text-gray-600">Free shipping on all orders over $50 with love in every box.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Best Sellers</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">From pocket-sized pals to room-filling giants, find the perfect companion for every age.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="teddy-card bg-white rounded-[2rem] overflow-hidden custom-shadow transition-all group">
+                    <div class="relative overflow-hidden aspect-square">
+                        <img src="https://placehold.co/400x400/faedcd/4a3728?text=Honey+Bear" alt="Honey Bear" class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md p-2 rounded-full cursor-pointer hover:bg-red-50 transition-colors">
+                            <i data-lucide="heart" class="w-5 h-5 text-gray-400 hover:text-red-500"></i>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold">Honey Crumble</h3>
+                            <span class="text-orange-600 font-bold">$34.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Extra fluffy classic brown bear with a silk bow.</p>
+                        <button class="w-full py-4 bg-orange-50 text-orange-700 font-bold rounded-xl border border-orange-100 hover:bg-orange-500 hover:text-white transition-all">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="teddy-card bg-white rounded-[2rem] overflow-hidden custom-shadow transition-all group">
+                    <div class="relative overflow-hidden aspect-square">
+                        <img src="https://placehold.co/400x400/ccd5ae/4a3728?text=Giant+Panda" alt="Giant Panda" class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500">
+                        <span class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-lg text-xs font-bold">LIMITED</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold">Bamboo Panda</h3>
+                            <span class="text-orange-600 font-bold">$58.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Velvety soft black & white panda, perfect for hugs.</p>
+                        <button class="w-full py-4 bg-orange-50 text-orange-700 font-bold rounded-xl border border-orange-100 hover:bg-orange-500 hover:text-white transition-all">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="teddy-card bg-white rounded-[2rem] overflow-hidden custom-shadow transition-all group">
+                    <div class="relative overflow-hidden aspect-square">
+                        <img src="https://placehold.co/400x400/e9edc9/4a3728?text=Blue+Sleepy" alt="Sleepy Blue Bear" class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold">Sleepy Bluey</h3>
+                            <span class="text-orange-600 font-bold">$29.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Weighted for anxiety relief and better sleep.</p>
+                        <button class="w-full py-4 bg-orange-50 text-orange-700 font-bold rounded-xl border border-orange-100 hover:bg-orange-500 hover:text-white transition-all">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-orange-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1">
+                    <h2 class="text-4xl font-bold mb-6">What our cuddle community says</h2>
+                    <div class="space-y-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                            </div>
+                            <p class="italic text-gray-600 mb-4">"The softest teddy I've ever owned. My daughter hasn't let go of her Honey Crumble since it arrived!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://placehold.co/50x50" class="rounded-full" alt="User">
+                                <div>
+                                    <h4 class="font-bold">Sarah Jenkins</h4>
+                                    <p class="text-xs text-gray-400">Verified Buyer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 ml-12">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                                <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                            </div>
+                            <p class="italic text-gray-600 mb-4">"The packaging was so cute, and the quality is amazing. Highly recommend for gift ideas."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://placehold.co/50x50" class="rounded-full" alt="User">
+                                <div>
+                                    <h4 class="font-bold">Michael Ross</h4>
+                                    <p class="text-xs text-gray-400">Verified Buyer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 w-full max-w-md">
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-xl border border-orange-100">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Join the Teddy Club</h3>
+                        <p class="text-gray-500 text-center mb-8 text-sm">Subscribe for 10% off your first buddy and exclusive bear-thday offers!</p>
+                        <form id="newsletter-form" class="space-y-4">
+                            <input type="email" placeholder="Your email address" class="w-full px-6 py-4 rounded-xl bg-orange-50 border-none focus:ring-2 focus:ring-orange-300 outline-none transition-all">
+                            <button type="submit" class="w-full py-4 bg-orange-500 text-white font-bold rounded-xl hover:bg-orange-600 transition-all shadow-md">Subscribe Now</button>
+                        </form>
+                        <p id="success-msg" class="hidden text-green-600 text-center mt-4 text-sm font-medium">✨ Welcome to the club! Check your inbox.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#4a3728] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="heart" class="text-orange-400 fill-orange-400"></i>
+                        <span class="text-2xl font-bold">TeddyHaven</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Crafting smiles and soft hugs since 2018. Based in the heart of Vermont with love for the whole world.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Shop</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Giant Bears</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Baby Plushies</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Gift Sets</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Custom Outfits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Support</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Returns & Refund</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Safety Care</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Connect</h4>
+                    <div class="flex gap-4 mb-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs text-gray-500">Call us: +1 (800) TEDDY-HU</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-gray-500 text-xs">
+                <p>&copy; 2024 TeddyHaven Inc. Made with cuddles in Vermont.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Newsletter form simulation
+        const form = document.getElementById('newsletter-form');
+        const successMsg = document.getElementById('success-msg');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = form.querySelector('input');
+            if(input.value) {
+                form.classList.add('opacity-0', 'pointer-events-none');
+                setTimeout(() => {
+                    form.style.display = 'none';
+                    successMsg.classList.remove('hidden');
+                    successMsg.classList.add('animate-bounce');
+                }, 300);
+            }
+        });
+
+        // Simple scroll spy for navbar shadow
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Add to cart feedback logic
+        document.querySelectorAll('.teddy-card button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const originalText = this.innerText;
+                this.innerText = 'Added! 🧸';
+                this.classList.add('bg-green-500', 'text-white', 'border-green-500');
+                
+                setTimeout(() => {
+                    this.innerText = originalText;
+                    this.classList.remove('bg-green-500', 'text-white', 'border-green-500');
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
